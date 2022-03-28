@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+}
+.wrapper{
+  background: url(images/thumb.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+body{
+  font-family: sans-serif;
+  overflow: hidden;
+  user-select: none;
+}
+nav .logo{
+  width: 140px;
+  height: auto;
+  padding: 10px 100px;
+}
+nav{
+  height: 70px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #063247;
+  box-shadow: 0 3px 15px rgba(0,0,0,.4);
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+}
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 0 25px;
+  line-height: 70px;
+  font-size: 20px;
+  background: #063247;
+  transition: .5s;
+}
+nav ul li a:hover,
+nav ul li a.active{
+  color: #23dbdb;
+}
+nav ul ul{
+  position: absolute;
+  top: 85px;
+  border-top: 3px solid #23dbdb;
+  opacity: 0;
+  visibility: hidden;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s linear;
+}
+nav ul ul li{
+  width: 150px;
+  display: list-item;
+  position: relative;
+  border: 1px solid rgba(0,0,0,0.4);
+  border-top: none;
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -70px;
+  left: 150px;
+}
+nav ul ul li a i{
+  margin-left: 45px;
+}
+.container {
+
+  background:rgba(0, 0, 0, 0.5);
+  position: relative;
+  margin:auto;
+  clear:both;
+  color:#fff;
+  padding:20px;
+  margin-top:50px;
+  }
+.wrapper .center{
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif;
+  user-select: none;
+}
+.center h1{
+  color: red;
+  font-size: 70px;
+  width: 900px;
+  font-weight: bold;
+  text-align: center;
+}
+.center h2{
+  color: red;
+  font-size: 70px;
+  font-weight: bold;
+  margin-top: 10px;
+  width: 885px;
+  text-align: center;
+}
+.center .buttons{
+  margin: 35px 260px;
+}
+.buttons button{
+  height: 50px;
+  width: 150px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: .6s;
+}
+.buttons .btn2{
+  margin-left: 25px;
+}
+.buttons button{
+  height: 50px;
+  width: 150px;
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 25px;
+  transition: .6s;
+}
+.buttons .btn2{
+  margin-left: 25px;
+}
+.buttons button:hover{
+  background-color: #fff;
+  color: #000;
+}
+.clear{
+clear:both;
+}
+section{
+  background: url(images/thumb.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+

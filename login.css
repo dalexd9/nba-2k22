@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+}
+.wrapper{
+  background: url(images/thumb.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+nav .logo{
+  width: 140px;
+  height: auto;
+  padding: 10px 100px;
+}
+nav{
+  height: 70px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #063247;
+  box-shadow: 0 3px 15px rgba(0,0,0,.4);
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+}
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 0 25px;
+  line-height: 70px;
+  font-size: 20px;
+  background: #063247;
+  transition: .5s;
+}
+nav ul li a:hover,
+nav ul li a.active{
+  color: #23dbdb;
+}
+nav ul ul{
+  position: absolute;
+  top: 85px;
+  border-top: 3px solid #23dbdb;
+  opacity: 0;
+  visibility: hidden;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s linear;
+}
+nav ul ul li{
+  width: 150px;
+  display: list-item;
+  position: relative;
+  border: 1px solid rgba(0,0,0,0.4);
+  border-top: none;
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -70px;
+  left: 150px;
+}
+nav ul ul li a i{
+  margin-left: 45px;
+}
+.center{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 400px;
+		background: red;
+		border-radius: 10px;
+	}
+.center h1{
+		text-align: center;
+		padding: 0 0 20px 0;
+		border-bottom: 1px solid silver;
+	}
+.center form{
+		padding: 0 40px;
+		box-sizing: border-box;
+	}
+form .txt_field{
+		position: relative;
+		border-bottom: 2px solid #adadad;
+		margin: 30px 0;
+	}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+ .cancelbtn {
+     width: 100%;
+  }
+
+  /* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+  /* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+.txt_field label{
+		position: absolute;
+		top: 50%
+		left: 5px;
+		color: #adadad;
+		transform: translateY(-50%);
+		font-size: 16px;
+		pointer-events: none;
+		transition: .5s;
+	}
+.txt_field span: :before{
+		content: '';
+		position: absolute;
+		top: 40px;
+		left: 0;
+		width: 0%;
+		height: 2px;
+		background: #2691d9;
+		transition: .5s;
+	}
+.txt_field input:focus 〜 label,
+.txt_field input:valid 〜 label {
+		top: -5;
+		color: #2691d9;
+	}
+.txt_field input:focus 〜 span::before,
+.txt_field input:valid 〜 span: :before{
+
